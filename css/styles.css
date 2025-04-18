@@ -53,20 +53,20 @@ button {
 /* common */
 
 .container {
-  width: 320px;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -681,14 +681,21 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .team-container {
+    width: 584px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
   .team-list {
+    /* flex-wrap: wrap; */
     column-gap: 24px;
     row-gap: 64px;
-    padding: 0 92px 0;
+    /* padding: 0 92px 0; */
   }
 
   .team-item {
     flex-basis: calc((100% - 24px) / 2);
+    width: 100%;
   }
 }
 
